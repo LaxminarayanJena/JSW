@@ -1,0 +1,42 @@
+Request method:	POST
+Request URI:	https://qa.msme.jswone.in/data-sync/import/sales-opp
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		access_token=eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbkNyZWF0ZWRBdCI6IjIwMjMvMDQvMTAgMTI6MDc6MDUiLCJzdG9yZUtleSI6Im1zbWUiLCJ4LWNvcnJlbGF0aW9uLWlkIjoiMTU4MDcwMzUtZDhjOS00ZWRmLTk3M2EtZDRlYzZlMDlkYWU4IiwidXNlclR5cGUiOiJSIiwiZXhwIjoxNjgzNzIwNDI1LCJ1c2VySWQiOiIzZjBiMTg2Ny1hNGU1LTQyNmEtYjQ4ZC0wZTdjYWJjMWE0YjkiLCJ0b2tlbkV4cGlyZUF0IjoiMjAyMy8wNS8xMCAxMjowNzowNSIsImlhdCI6MTY4MTEwODYyNX0.iiMqVazQcBOwyqwWJS6O1tzbbWFUlGoLc9Et2yaZqsJUgGczIsCcNkTH4NvD69zGGkLvbAysH0ik2JAHwRuajA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+src\test\resources\payloads\slo.json
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+x-frame-options: DENY
+content-type: application/json
+date: Fri, 05 May 2023 03:36:22 GMT
+server: Google Frontend
+via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "customerId": "a5fabf2c-9bb0-4e61-a8d6-0d9b18c02ffb",
+    "cartId": null,
+    "cartVersion": null,
+    "price": "80,000.00",
+    "taxes": "14,400.00",
+    "deliveryCharge": null,
+    "otherCharges": null,
+    "subTotal": "94,400.00",
+    "amountDue": "94,400.00",
+    "orderId": "57b1506b-59ab-493e-b340-b8e424b60890",
+    "orderNumber": "JOO-09E6KZNE"
+}

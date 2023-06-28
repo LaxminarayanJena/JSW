@@ -1,0 +1,15 @@
+{
+  "productKey": "2062_2011-E350A-02",
+  "variantKey": "HRCTLF-2062_2011-E350A-5-1250-2500",
+  "attributesMeta": [
+    "THICKNESS_MM",
+    "WIDTH_MM",
+    "LENGTH_MM"
+  ],
+  "customAttributes": [
+    {
+      "key": "NUMBER_OF_SHEETS",
+      "value": "336"
+    }
+  ]
+}

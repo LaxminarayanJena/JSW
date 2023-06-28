@@ -1,0 +1,133 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-05T03:36:12.051Z",
+        "line": 5,
+        "name": "Verify SLO api is working",
+        "description": "",
+        "id": "validating-sloapi;verify-slo-api-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9098447200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"SLOAPI\" with \"Post\" http request for \"slo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SLOAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"slo\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinations.Cart.user_calls_something_with_something_http_request_for_something(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1999700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "validate that the \"SLOAPI\"  call response is success with status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SLOAPI",
+                  "offset": 19
+                },
+                {
+                  "val": "200",
+                  "offset": 71
+                }
+              ],
+              "location": "stepDefinations.Cart.validate_that_the_something_call_response_is_success_with_status_code_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1001400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate the \"SLOAPI\" response time is less than \"10000\" ms",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SLOAPI",
+                  "offset": 14
+                },
+                {
+                  "val": "10000",
+                  "offset": 50
+                }
+              ],
+              "location": "stepDefinations.Cart.validate_the_something_response_time_is_less_than_something_ms(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6952100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validate the \"SLOAPI\" payload structure has \"orderNumber\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SLOAPI",
+                  "offset": 14
+                },
+                {
+                  "val": "orderNumber",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinations.Cart.validate_the_something_payload_structure_has_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SLO"
+          },
+          {
+            "name": "@SLO"
+          }
+        ]
+      }
+    ],
+    "name": "Validating SLOAPI",
+    "description": "",
+    "id": "validating-sloapi",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/SLO.feature",
+    "tags": [
+      {
+        "name": "@SLO",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

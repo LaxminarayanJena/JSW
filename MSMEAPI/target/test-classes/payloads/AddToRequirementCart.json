@@ -1,0 +1,19 @@
+{
+  "channelId": "9ed792af-18c6-43f9-a16e-818321f1459d",
+  "uomCalculationRequest": {
+    "productVariantKey": "HRPKLCF-1079_2017-HR2-1.6-1500",
+    "customAttributes": [
+      {
+        "key": "QUANTITY",
+        "value": "40.0"
+      }
+    ],
+    "attributesMeta": [
+      "THICKNESS_MM",
+      "WIDTH_MM"
+    ]
+  },
+  "parting": null,
+  "cartType": "enquiry",
+  "additionalAttributes": null
+}

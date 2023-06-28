@@ -1,0 +1,110 @@
+{
+	"filterConditions": [
+		{
+			"id": "BRAND",
+			"displayText": "Brand",
+			"type": "selection",
+			"values": [
+				"JSW Steel"
+			],
+			"selectedValues": [],
+			"label": "Brand"
+		},
+		{
+			"id": "GRADE",
+			"displayText": "Grade",
+			"type": "selection",
+			"values": [
+				"2062:2011",
+				"277:2018",
+				"5886:2017",
+				"11513:2017",
+				"15961:2012",
+				"CHQ",
+				"1079:2017",
+				"7887:1992",
+				"5986:2017",
+				"7904_2018",
+				"513 (Part1):2016",
+				"10748:2004"
+			],
+			"selectedValues": [
+				"2062:2011"
+			],
+			"label": "Grade"
+		},
+		{
+			"id": "AWS_CODE",
+			"displayText": "AWS code",
+			"type": "selection",
+			"values": [],
+			"selectedValues": []
+		},
+		{
+			"id": "BASE_MATERIAL",
+			"displayText": "Base material",
+			"type": "selection",
+			"values": [],
+			"selectedValues": []
+		},
+		{
+			"id": "THICKNESS",
+			"displayText": "Thickness",
+			"type": "range",
+			"values": [
+				"0.47",
+				"0.6",
+				"1.2",
+				"1.6",
+				"2.0",
+				"2.5",
+				"4.0",
+				"6.0",
+				"12.0"
+			],
+			"selectedValues": [],
+			"label": "Thickness"
+		},
+		{
+			"id": "WIDTH",
+			"displayText": "Width",
+			"type": "range",
+			"values": [
+				"610.0",
+				"900.0",
+				"1250.0",
+				"1310.0",
+				"1440.0",
+				"1500.0"
+			],
+			"selectedValues": [],
+			"label": "Width"
+		},
+		{
+			"id": "LENGTH",
+			"displayText": "Length",
+			"type": "range",
+			"values": [
+				"1300.0",
+				"2500.0",
+				"6300.0"
+			],
+			"selectedValues": [],
+			"label": "Length"
+		},
+		{
+			"id": "DIAMETER",
+			"displayText": "Diameter",
+			"type": "range",
+			"values": [
+				"5.5",
+				"8.0"
+			],
+			"selectedValues": []
+		}
+	],
+	"offSet": 1,
+	"limit": 21,
+	"categoryId": "61235c5d-2455-4456-a6b0-dd0bc7f806fd",
+	"directOrderProducts": false
+}

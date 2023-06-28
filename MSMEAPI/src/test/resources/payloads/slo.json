@@ -1,0 +1,105 @@
+{
+    "customerId": "a5fabf2c-9bb0-4e61-a8d6-0d9b18c02ffb",
+    "shippingAddressId": "qxc8qYtJ",
+    "billingAddressId": "OglMnuHZ",
+    "slo": true,
+    "selfPickup": false,
+    "isDirect": true,
+    "advanePayment": 100000,
+    "ledgerBalance": 0.00,
+    "salesforceOpportunityURL": "https://jswoneplatforms--prdreplica.sandbox.my.salesforce.com/0069D00000SdMioQAF",
+    "salesforceOpportunityId": "0069D00000SdJH85t",
+    "salesAssociate": "Sales Test User",
+    "remarks": "NA",
+    "ratesValidity": "24 hours",
+    "poDetails": "PO-0007143",
+    "paymentTerms": "100% advance",
+    "opportunityString": "194,22,0",
+    "opportunityOwnerEmail": "v_pradeep.aridass@jsw.in",
+    "lineItems": [
+        {
+            "type": "ON_CATALOG",
+            "sellerId": "TEST999",
+            "sapLineItemId": 10,
+            "salesForceSkuId": "SKUR-24845",
+            "productKey": "2062_2011-E250A-03",
+            "orderedQuantity": 10000.000000000,
+            "name": "MS HR Sheet 2062:2011 E250A",
+            "finalSellingPrice": 200.00000000,
+            "channelKey": "TSA2",
+            "attributes": {
+                "WIDTH_MM": "1250",
+                "THICKNESS_MM": "7",
+                "LENGTH_MM": "1500"
+            }
+        },
+        {
+            "type": "ON_CATALOG",
+            "sellerId": "TEST999",
+            "sapLineItemId": 20,
+            "salesForceSkuId": "SKUR-24846",
+            "productKey": "2062_2011-E250A-03",
+            "orderedQuantity": 10000.000000000,
+            "name": "MS HR Sheet 2062:2011 E250A",
+            "finalSellingPrice": 200.00000000,
+            "channelKey": "TSA2",
+            "attributes": {
+                "WIDTH_MM": "1250",
+                "THICKNESS_MM": "7",
+                "LENGTH_MM": "1500"
+            }
+        },
+        {
+            "type": "ON_CATALOG",
+            "sellerId": "TEST999",
+            "sapLineItemId": 30,
+            "salesForceSkuId": "SKUR-24847",
+            "productKey": "2062_2011-E250A-04",
+            "orderedQuantity": 10000.000000000,
+            "name": "MS HR Coil 2062:2011 E250A",
+            "finalSellingPrice": 200.00000000,
+            "channelKey": "TSA2",
+            "attributes": {
+                "WIDTH_MM": "1250",
+                "THICKNESS_MM": "7"
+            }
+        },
+        {
+            "type": "ON_CATALOG",
+            "sellerId": "TEST999",
+            "sapLineItemId": 40,
+            "salesForceSkuId": "SKUR-24848",
+            "productKey": "277_2018-GP-01",
+            "orderedQuantity": 10000.000000000,
+            "name": "MS GI Coil 277:2018 GP",
+            "finalSellingPrice": 200.00000000,
+            "channelKey": "TSA2",
+            "attributes": {
+                "WIDTH_MM": "1250",
+                "THICKNESS_MM": "7",
+                "SPANGLE_TYPE": "Zero",
+                "S_ZN_COATING_GSM_MIN": "70"
+            }
+        }
+    ],
+    "customFields": {
+        "tdc_requirements": {
+            "tdc_text": "null"
+        },
+        "specialDeliveryInstructions": {
+            "terms": "none"
+        },
+        "sellerPaymentTerms": {
+            "terms": "null"
+        },
+        "estimatedDeliveryTimeline": {
+            "text": "3 days"
+        },
+        "creditDetails": {
+            "isCreditRequired": "false"
+        },
+        "committedDeliveryTimeline": {
+            "terms": "null"
+        }
+    }
+}

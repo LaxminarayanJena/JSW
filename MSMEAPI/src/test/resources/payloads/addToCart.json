@@ -1,0 +1,17 @@
+{
+  "channelId": "c9f608fa-0f62-40a9-b328-6a21a986180a",
+  "uomCalculationRequest": {
+    "productVariantKey": "JSW-CONCREEL-HD-CEMENT-MASTER",
+    "customAttributes": [
+      {
+        "key": "QUANTITY",
+        "value": "1900"
+      }
+    ],
+    "attributesMeta": []
+  },
+  "parting": null,
+  "cartType": "order",
+  "additionalAttributes": null,
+  "source": "PDP"
+}
