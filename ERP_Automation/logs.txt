@@ -1,0 +1,112 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.JSW:JSW:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: tech.grasshopper:extentreports-cucumber6-adapter:jar -> version 2.13.0 vs 1.2.0 @ line 67, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------------------------< com.JSW:JSW >-----------------------------
+[INFO] Building JSW 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ JSW ---
+[INFO] Deleting D:\EclipseProj\JSW\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ JSW ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\EclipseProj\JSW\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ JSW ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 30 source files to D:\EclipseProj\JSW\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ JSW ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 42 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ JSW ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 30 source files to D:\EclipseProj\JSW\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ JSW ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running runner.runner
+
+@OMS
+Scenario: Verify Shipment in OMS                                                           # src/test/resources/features/OMS.feature:13
+  Given user is on home page                                                               # stepdefination.RegistrationPageSteps.user_is_on_home_page()
+  When user clicks on login button                                                         # stepdefination.LoginPageSteps.user_clicks_on_login_button()
+  When user click  on login by email                                                       # stepdefination.LoginPageSteps.user_click_on_login_by_email()
+  When user enters logins with username with "ramyatestuserssr@gmail.com" and  "Ramya@678" # stepdefination.LoginPageSteps.user_enters_logins_with_username_with_and(java.lang.String,java.lang.String)
+  And user clicks on signin                                                                # stepdefination.LoginPageSteps.user_clicks_on_signin()
+  Then user homepage is displayed                                                          # stepdefination.LoginPageSteps.user_homepage_is_displayed()
+  When cart is empty or not                                                                # stepdefination.PaymentSteps.cart_is_empty_or_not()
+  Then user navigate to Home page                                                          # stepdefination.HomePageSteps.user_navigate_to_home_page()
+  When user clicks HR from Steel Navigation Menu                                           # stepdefination.HomePageSteps.user_clicks_hr_from_steel_navigation_menu()
+  When user selects Steel product                                                          # stepdefination.PLPSteps.user_selects_steel_product()
+  Given user is on product detail page of Steel item                                       # stepdefination.PDPRegisteredUserSteps.user_is_on_product_detail_page_of_steel_item()
+  When user clicks on Add To Cart button available in the right side of the webpage        # stepdefination.PDPRegisteredUserSteps.user_clicks_on_add_to_cart_button_available_in_the_right_side_of_the_webpage()
+  Then verify that the product should be added in the cart                                 # stepdefination.PDPRegisteredUserSteps.verify_that_the_product_should_be_added_in_the_cart()
+  When user click on Cart icon on homepage                                                 # stepdefination.CartDetailSteps.user_click_on_cart_icon_on_homepage()
+  When user click on pickup checkbox                                                       # stepdefination.CartDetailSteps.user_click_on_pickup_checkbox()
+  And user click on proceed to pay on cart detail page                                     # stepdefination.PaymentSteps.user_click_on_proceed_to_pay_on_cart_detail_page()
+  And user select bank name to transfer from the drop down on payment page                 # stepdefination.PaymentSteps.user_select_bank_name_to_transfer_from_the_drop_down_on_payment_page()
+  Then verify bank is selected                                                             # stepdefination.PaymentSteps.verify_bank_is_selected()
+  And User click on PayNow                                                                 # stepdefination.PaymentSteps.user_click_on_pay_now()
+  Then User navigates to RazorPay Page                                                     # stepdefination.PaymentSteps.user_navigates_to_razor_pay_page()
+  And User click on success button                                                         # stepdefination.PaymentSteps.user_click_on_success_button()
+JOO-FLCVMJ7F
+  Then order sucessfully placed message should be displayed                                # stepdefination.PaymentSteps.order_sucessfully_placed_message_should_be_displayed()
+  And user login to OMS                                                                    # stepdefination.OMSPageStep.user_login_to_OMS()
+  And user navigates to OMS ShipmentsPage                                                  # stepdefination.OMSPageStep.user_navigates_to_oms_shipments_page()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='JOO-FLCVMJ7F']"}
+  (Session info: chrome=113.0.5672.129)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-AC5GLK2', ip: '192.168.0.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 788218b085a1c732a44b50adf83554e9
+*** Element info: {Using=xpath, value=//a[normalize-space()='JOO-FLCVMJ7F']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.OMSPage.goToOMSShipmentPage(OMSPage.java:66)
+	at stepdefination.OMSPageStep.user_navigates_to_oms_shipments_page(OMSPageStep.java:23)
+	at ✽.user navigates to OMS ShipmentsPage(file:///D:/EclipseProj/JSW/src/test/resources/features/OMS.feature:31)
+
+  And user creates a completed shipment in OMS                                             # stepdefination.OMSPageStep.user_creates_completed_shipment()
+  And user navigates to ShipmentDetails Page in CCP                                        # stepdefination.OMSPageStep.user_navigates_to_shipments_page()
+  And user clicks on viewDocuments                                                         # stepdefination.OMSPageStep.user_clicks_on_view_documents()
+
+    Embedding Verify_Shipment_in_OMS [image/png 25542 bytes]
+
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 188.835 s - in runner.runner
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:18 min
+[INFO] Finished at: 2023-06-02T11:36:20+05:30
+[INFO] ------------------------------------------------------------------------

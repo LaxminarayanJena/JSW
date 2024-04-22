@@ -1,0 +1,736 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "lineItemId": {
+        "type": "integer"
+      },
+      "productInfo": {
+        "type": "object",
+        "properties": {
+          "sku": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "brand": {
+            "type": "string"
+          },
+          "imageUrl": {
+            "type": "string"
+          },
+          "variantId": {
+            "type": "integer"
+          },
+          "attributes": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "variantKey": {
+            "type": "string"
+          },
+          "productForm": {
+            "type": "string"
+          },
+          "productSlug": {
+            "type": "string"
+          },
+          "primaryQuantity": {
+            "type": "string"
+          },
+          "secondaryQuantity": {
+            "type": "string"
+          }
+        },
+        "required": ["sku", "name", "brand", "variantId", "variantKey"]
+      },
+      "measurementUnit": {
+        "type": "string"
+      },
+      "measurementUnitDescription": {
+        "type": "string"
+      },
+      "currentStatus": {
+        "type": "null"
+      },
+      "nextLineItemStates": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "type": "string"
+            }
+          },
+          "required": ["state"]
+        }
+      },
+      "sellerInfo": {
+        "type": "object",
+        "properties": {
+          "gstin": {
+            "type": "string"
+          },
+          "channels": {
+            "type": "null"
+          },
+          "sellerId": {
+            "type": "string"
+          },
+          "sellerName": {
+            "type": "string"
+          },
+          "sellerType": {
+            "type": "null"
+          },
+          "companyName": {
+            "type": ["string", "null"]
+          },
+          "contactDetails": {
+            "type": "object",
+            "properties": {
+              "primaryEmail": {
+                "type": "string"
+              },
+              "primaryContact": {
+                "type": "string"
+              },
+              "secondaryEmail": {
+                "type": ["string", "null"]
+              },
+              "secondaryContact": {
+                "type": ["string", "null"]
+              }
+            }
+          },
+          "sellerAddresses": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": ["string", "null"]
+                },
+                "city": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "mobile": {
+                  "type": "string"
+                },
+                "region": {
+                  "type": "string"
+                },
+                "company": {
+                  "type": ["string", "null"]
+                },
+                "postalCode": {
+                  "type": "string"
+                },
+                "streetLine": {
+                  "type": "string"
+                },
+                "streetLine2": {
+                  "type": ["string", "null"]
+                },
+                "streetLineAddress": {
+                  "type": ["string", "null"]
+                }
+              },
+              "required": ["city", "state", "mobile", "region", "postalCode", "streetLine"]
+            }
+          },
+          "sellerBankDetails": {
+            "type": "object",
+            "properties": {
+              "pan": {
+                "type": "string"
+              },
+              "gstin": {
+                "type": "string"
+              },
+              "ifscCode": {
+                "type": "string"
+              },
+              "accountType": {
+                "type": "string"
+              },
+              "accountNumber": {
+                "type": "string"
+              },
+              "fundAccountId": {
+                "type": "string"
+              },
+              "accountHolderName": {
+                "type": "string"
+              },
+              "fundAccountDetail": {
+                "type": "object",
+                "properties": {
+                  "sellerAccount": {
+                    "type": "string"
+                  },
+                  "plantSupplyAccount": {
+                    "type": "string"
+                  },
+                  "deutscheBankAccount": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "required": ["pan", "gstin", "ifscCode", "accountType", "accountNumber", "fundAccountId", "accountHolderName"]
+          }
+        },
+        "required": ["gstin", "sellerId", "sellerName"]
+      },
+      "channelInfo": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "null"
+          },
+          "city": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "region": {
+            "type": "string"
+          },
+          "postalCode": {
+            "type": "integer"
+          },
+          "streetLine": {
+            "type": "string"
+          }
+        },
+        "required": ["city", "state", "postalCode", "streetLine"]
+      },
+      "purchaseOrderId": {
+        "type": ["string", "null"]
+      },
+      "quantityOrdered": {
+        "type": "number"
+      },
+      "quantityShipped": {
+        "type": "number"
+      },
+      "quantityReturned": {
+        "type": "number"
+      },
+      "quantityReplaced": {
+        "type": "number"
+      },
+      "quantityShortClose": {
+        "type": "number"
+      },
+      "quantityDelivered": {
+        "type": "number"
+      },
+      "quantityCancelled": {
+        "type": "number"
+      },
+      "quantityTolerance": {
+        "type": "number"
+      },
+      "listPrice": {
+        "type": "object",
+        "properties": {
+          "centAmount": {
+            "type": "integer"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "displayAmount": {
+            "type": "string"
+          },
+          "absoluteDisplayAmount": {
+            "type": "string"
+          },
+          "precisionAmount": {
+            "type": "integer"
+          },
+          "precision": {
+            "type": "integer"
+          }
+        },
+        "required": ["centAmount", "currency", "displayAmount", "absoluteDisplayAmount", "precisionAmount", "precision"]
+      },
+      "discountedPrice": {
+        "type": "object",
+        "properties": {
+          "centAmount": {
+            "type": "integer"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "displayAmount": {
+            "type": "string"
+          },
+          "absoluteDisplayAmount": {
+            "type": "string"
+          },
+          "precisionAmount": {
+            "type": "integer"
+          },
+          "precision": {
+            "type": "integer"
+          }
+        },
+        "required": ["centAmount", "currency", "displayAmount", "absoluteDisplayAmount", "precisionAmount", "precision"]
+      },
+      "orderedValue": {
+        "type": "object",
+        "properties": {
+          "centAmount": {
+            "type": "integer"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "displayAmount": {
+            "type": "string"
+          },
+          "absoluteDisplayAmount": {
+            "type": "string"
+          },
+          "precisionAmount": {
+            "type": "integer"
+          },
+          "precision": {
+            "type": "integer"
+          }
+        },
+        "required": ["centAmount", "currency", "displayAmount", "absoluteDisplayAmount", "precisionAmount", "precision"]
+      },
+      "orderedValueWithTax": {
+        "type": "object",
+        "properties": {
+          "centAmount": {
+            "type": "integer"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "displayAmount": {
+            "type": "string"
+          },
+          "absoluteDisplayAmount": {
+            "type": "string"
+          },
+          "precisionAmount": {
+            "type": "integer"
+          },
+          "precision": {
+            "type": "integer"
+          }
+        },
+        "required": ["centAmount", "currency", "displayAmount", "absoluteDisplayAmount", "precisionAmount", "precision"]
+      },
+      "deliveredValue": {
+        "type": "object",
+        "properties": {
+          "centAmount": {
+            "type": "integer"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "displayAmount": {
+            "type": ["string", "null"]
+          },
+          "absoluteDisplayAmount": {
+            "type": ["string", "null"]
+          },
+          "precisionAmount": {
+            "type": "integer"
+          },
+          "precision": {
+            "type": "integer"
+          }
+        },
+        "required": ["centAmount", "currency", "precisionAmount", "precision"]
+      },
+      "deliveredValueWithTax": {
+        "type": "object",
+        "properties": {
+          "centAmount": {
+            "type": "integer"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "displayAmount": {
+            "type": ["string", "null"]
+          },
+          "absoluteDisplayAmount": {
+            "type": ["string", "null"]
+          },
+          "precisionAmount": {
+            "type": "integer"
+          },
+          "precision": {
+            "type": "integer"
+          }
+        },
+        "required": ["centAmount", "currency", "precisionAmount", "precision"]
+      },
+      "returnValue": {
+        "type": "object",
+        "properties": {
+          "centAmount": {
+            "type": "integer"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "displayAmount": {
+            "type": ["string", "null"]
+          },
+          "absoluteDisplayAmount": {
+            "type": ["string", "null"]
+          },
+          "precisionAmount": {
+            "type": "integer"
+          },
+          "precision": {
+            "type": "integer"
+          }
+        },
+        "required": ["centAmount", "currency", "precisionAmount", "precision"]
+      },
+      "replaceValue": {
+        "type": "object",
+        "properties": {
+          "centAmount": {
+            "type": "integer"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "displayAmount": {
+            "type": ["string", "null"]
+          },
+          "absoluteDisplayAmount": {
+            "type": ["string", "null"]
+          },
+          "precisionAmount": {
+            "type": "integer"
+          },
+          "precision": {
+            "type": "integer"
+          }
+        },
+        "required": ["centAmount", "currency", "precisionAmount", "precision"]
+      },
+      "serviceCost": {
+        "type": "object",
+        "properties": {
+          "centAmount": {
+            "type": "integer"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "displayAmount": {
+            "type": ["string", "null"]
+          },
+          "absoluteDisplayAmount": {
+            "type": ["string", "null"]
+          },
+          "precisionAmount": {
+            "type": "integer"
+          },
+          "precision": {
+            "type": "integer"
+          }
+        },
+        "required": ["centAmount", "currency", "precisionAmount", "precision"]
+      },
+      "serviceCostWithTax": {
+        "type": "object",
+        "properties": {
+          "centAmount": {
+            "type": "integer"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "displayAmount": {
+            "type": ["string", "null"]
+          },
+          "absoluteDisplayAmount": {
+            "type": ["string", "null"]
+          },
+          "precisionAmount": {
+            "type": "integer"
+          },
+          "precision": {
+            "type": "integer"
+          }
+        },
+        "required": ["centAmount", "currency", "precisionAmount", "precision"]
+      },
+      "serviceCostBreakup": {
+        "type": "object",
+        "properties": {
+          "processingCharge": {
+            "type": "number"
+          },
+          "freightCharge": {
+            "type": "number"
+          },
+          "loadingCharge": {
+            "type": "number"
+          },
+          "otherCharge": {
+            "type": ["number", "null"]
+          },
+          "processingChargeTax": {
+            "type": ["number", "null"]
+          },
+          "freightChargeTax": {
+            "type": ["number", "null"]
+          },
+          "loadingChargeTax": {
+            "type": ["number", "null"]
+          },
+          "otherChargeTax": {
+            "type": ["number", "null"]
+          },
+          "gstFreightCharge": {
+            "type": ["number", "null"]
+          },
+          "igstFreightCharge": {
+            "type": ["number", "null"]
+          },
+          "sgstFreightCharge": {
+            "type": ["number", "null"]
+          },
+          "cgstFreightCharge": {
+            "type": ["number", "null"]
+          },
+          "gstLoadingCharge": {
+            "type": ["number", "null"]
+          },
+          "igstLoadingCharge": {
+            "type": ["number", "null"]
+          },
+          "sgstLoadingCharge": {
+            "type": ["number", "null"]
+          },
+          "cgstLoadingCharge": {
+            "type": ["number", "null"]
+          },
+          "gstOtherCharge": {
+            "type": ["number", "null"]
+          },
+          "igstOtherCharge": {
+            "type": ["number", "null"]
+          },
+          "sgstOtherCharge": {
+            "type": ["number", "null"]
+          },
+          "cgstOtherCharge": {
+            "type": ["number", "null"]
+          },
+          "gstProcessingCharge": {
+            "type": ["number", "null"]
+          },
+          "igstProcessingCharge": {
+            "type": ["number", "null"]
+          },
+          "sgstProcessingCharge": {
+            "type": ["number", "null"]
+          },
+          "cgstProcessingCharge": {
+            "type": ["number", "null"]
+          }
+        }
+      },
+      "serviceCostBreakupLineItem": {
+        "type": "object",
+        "properties": {
+          "processingCharge": {
+            "type": "object",
+            "properties": {
+              "centAmount": {
+                "type": "integer"
+              },
+              "currency": {
+                "type": "string"
+              },
+              "displayAmount": {
+                "type": ["string", "null"]
+              },
+              "absoluteDisplayAmount": {
+                "type": ["string", "null"]
+              },
+              "precisionAmount": {
+                "type": "integer"
+              },
+              "precision": {
+                "type": "integer"
+              }
+            },
+            "required": ["centAmount", "currency", "precisionAmount", "precision"]
+          },
+          "processingChargeWithTax": {
+            "type": "object",
+            "properties": {
+              "centAmount": {
+                "type": "integer"
+              },
+              "currency": {
+                "type": "string"
+              },
+              "displayAmount": {
+                "type": ["string", "null"]
+              },
+              "absoluteDisplayAmount": {
+                "type": ["string", "null"]
+              },
+              "precisionAmount": {
+                "type": "integer"
+              },
+              "precision": {
+                "type": "integer"
+              }
+            },
+            "required": ["centAmount", "currency", "precisionAmount", "precision"]
+          },
+          "freightCharge": {
+            "type": "object",
+            "properties": {
+              "centAmount": {
+                "type": "integer"
+              },
+              "currency": {
+                "type": "string"
+              },
+              "displayAmount": {
+                "type": ["string", "null"]
+              },
+              "absoluteDisplayAmount": {
+                "type": ["string", "null"]
+              },
+              "precisionAmount": {
+                "type": "integer"
+              },
+              "precision": {
+                "type": "integer"
+              }
+            },
+            "required": ["centAmount", "currency", "precisionAmount", "precision"]
+          },
+          "freightChargeWithTax": {
+            "type": "object",
+            "properties": {
+              "centAmount": {
+                "type": "integer"
+              },
+              "currency": {
+                "type": "string"
+              },
+              "displayAmount": {
+                "type": ["string", "null"]
+              },
+              "absoluteDisplayAmount": {
+                "type": ["string", "null"]
+              },
+              "precisionAmount": {
+                "type": "integer"
+              },
+              "precision": {
+                "type": "integer"
+              }
+            },
+            "required": ["centAmount", "currency", "precisionAmount", "precision"]
+          },
+          "loadingCharge": {
+            "type": "object",
+            "properties": {
+              "centAmount": {
+                "type": "integer"
+              },
+              "currency": {
+                "type": "string"
+              },
+              "displayAmount": {
+                "type": ["string", "null"]
+              },
+              "absoluteDisplayAmount": {
+                "type": ["string", "null"]
+              },
+              "precisionAmount": {
+                "type": "integer"
+              },
+              "precision": {
+                "type": "integer"
+              }
+            },
+            "required": ["centAmount", "currency", "precisionAmount", "precision"]
+          },
+          "loadingChargeWithTax": {
+            "type": "object",
+            "properties": {
+              "centAmount": {
+                "type": "integer"
+              },
+              "currency": {
+                "type": "string"
+              },
+              "displayAmount": {
+                "type": ["string", "null"]
+              },
+              "absoluteDisplayAmount": {
+                "type": ["string", "null"]
+              },
+              "precisionAmount": {
+                "type": "integer"
+              },
+              "precision": {
+                "type": "integer"
+              }
+            },
+            "required": ["centAmount", "currency", "precisionAmount", "precision"]
+          },
+          "otherCharge": {
+            "type": ["number", "null"]
+          },
+          "otherChargeWithTax": {
+            "type": ["number", "null"]
+          }
+        }
+      },
+      "variantMMId": {
+        "type": ["string", "null"]
+      },
+      "lineItemShipments": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "shipmentId": {
+              "type": ["string", "null"]
+            },
+            "shipmentNumber": {
+              "type": ["string", "null"]
+            }
+          }
+        }
+      }
+    },
+    "required": ["lineItemId", "productInfo", "measurementUnit", "measurementUnitDescription", "currentStatus", "nextLineItemStates", "sellerInfo", "channelInfo", "quantityOrdered", "quantityShipped", "quantityReturned", "quantityReplaced", "quantityShortClose", "quantityDelivered", "quantityCancelled", "quantityTolerance", "listPrice", "discountedPrice", "orderedValue", "orderedValueWithTax", "deliveredValue", "deliveredValueWithTax", "returnValue", "replaceValue", "serviceCost", "serviceCostWithTax", "serviceCostBreakup", "serviceCostBreakupLineItem"]
+  }
+}

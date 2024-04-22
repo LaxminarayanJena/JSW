@@ -1,0 +1,1116 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "amounts": {
+            "properties": {
+                "ADP": {
+                    "properties": {
+                        "amount": {
+                            "properties": {
+                                "absoluteDisplayAmount": {
+                                    "type": "null"
+                                },
+                                "centAmount": {
+                                    "type": "integer"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "displayAmount": {
+                                    "type": "null"
+                                },
+                                "precision": {
+                                    "type": "integer"
+                                },
+                                "precisionAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "centAmount",
+                                "currency",
+                                "displayAmount",
+                                "absoluteDisplayAmount",
+                                "precisionAmount",
+                                "precision"
+                            ],
+                            "type": "object"
+                        },
+                        "label": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "amount"
+                    ],
+                    "type": "object"
+                },
+                "FDA": {
+                    "properties": {
+                        "amount": {
+                            "properties": {
+                                "absoluteDisplayAmount": {
+                                    "type": "null"
+                                },
+                                "centAmount": {
+                                    "type": "integer"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "displayAmount": {
+                                    "type": "null"
+                                },
+                                "precision": {
+                                    "type": "integer"
+                                },
+                                "precisionAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "centAmount",
+                                "currency",
+                                "displayAmount",
+                                "absoluteDisplayAmount",
+                                "precisionAmount",
+                                "precision"
+                            ],
+                            "type": "object"
+                        },
+                        "label": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "amount"
+                    ],
+                    "type": "object"
+                },
+                "FRA": {
+                    "properties": {
+                        "amount": {
+                            "properties": {
+                                "absoluteDisplayAmount": {
+                                    "type": "null"
+                                },
+                                "centAmount": {
+                                    "type": "integer"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "displayAmount": {
+                                    "type": "null"
+                                },
+                                "precision": {
+                                    "type": "integer"
+                                },
+                                "precisionAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "centAmount",
+                                "currency",
+                                "displayAmount",
+                                "absoluteDisplayAmount",
+                                "precisionAmount",
+                                "precision"
+                            ],
+                            "type": "object"
+                        },
+                        "label": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "amount"
+                    ],
+                    "type": "object"
+                },
+                "LDA": {
+                    "properties": {
+                        "amount": {
+                            "properties": {
+                                "absoluteDisplayAmount": {
+                                    "type": "string"
+                                },
+                                "centAmount": {
+                                    "type": "integer"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "displayAmount": {
+                                    "type": "string"
+                                },
+                                "precision": {
+                                    "type": "integer"
+                                },
+                                "precisionAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "centAmount",
+                                "currency",
+                                "displayAmount",
+                                "absoluteDisplayAmount",
+                                "precisionAmount",
+                                "precision"
+                            ],
+                            "type": "object"
+                        },
+                        "label": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "amount"
+                    ],
+                    "type": "object"
+                },
+                "LDT": {
+                    "properties": {
+                        "amount": {
+                            "properties": {
+                                "absoluteDisplayAmount": {
+                                    "type": "string"
+                                },
+                                "centAmount": {
+                                    "type": "integer"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "displayAmount": {
+                                    "type": "string"
+                                },
+                                "precision": {
+                                    "type": "integer"
+                                },
+                                "precisionAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "centAmount",
+                                "currency",
+                                "displayAmount",
+                                "absoluteDisplayAmount",
+                                "precisionAmount",
+                                "precision"
+                            ],
+                            "type": "object"
+                        },
+                        "label": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "amount"
+                    ],
+                    "type": "object"
+                },
+                "LIA": {
+                    "properties": {
+                        "amount": {
+                            "properties": {
+                                "absoluteDisplayAmount": {
+                                    "type": "string"
+                                },
+                                "centAmount": {
+                                    "type": "integer"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "displayAmount": {
+                                    "type": "string"
+                                },
+                                "precision": {
+                                    "type": "integer"
+                                },
+                                "precisionAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "centAmount",
+                                "currency",
+                                "displayAmount",
+                                "absoluteDisplayAmount",
+                                "precisionAmount",
+                                "precision"
+                            ],
+                            "type": "object"
+                        },
+                        "label": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "amount"
+                    ],
+                    "type": "object"
+                },
+                "LIT": {
+                    "properties": {
+                        "amount": {
+                            "properties": {
+                                "absoluteDisplayAmount": {
+                                    "type": "string"
+                                },
+                                "centAmount": {
+                                    "type": "integer"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "displayAmount": {
+                                    "type": "string"
+                                },
+                                "precision": {
+                                    "type": "integer"
+                                },
+                                "precisionAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "centAmount",
+                                "currency",
+                                "displayAmount",
+                                "absoluteDisplayAmount",
+                                "precisionAmount",
+                                "precision"
+                            ],
+                            "type": "object"
+                        },
+                        "label": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "amount"
+                    ],
+                    "type": "object"
+                },
+                "OCA": {
+                    "properties": {
+                        "amount": {
+                            "properties": {
+                                "absoluteDisplayAmount": {
+                                    "type": "null"
+                                },
+                                "centAmount": {
+                                    "type": "integer"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "displayAmount": {
+                                    "type": "null"
+                                },
+                                "precision": {
+                                    "type": "integer"
+                                },
+                                "precisionAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "centAmount",
+                                "currency",
+                                "displayAmount",
+                                "absoluteDisplayAmount",
+                                "precisionAmount",
+                                "precision"
+                            ],
+                            "type": "object"
+                        },
+                        "label": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "amount"
+                    ],
+                    "type": "object"
+                },
+                "TOA": {
+                    "properties": {
+                        "amount": {
+                            "properties": {
+                                "absoluteDisplayAmount": {
+                                    "type": "string"
+                                },
+                                "centAmount": {
+                                    "type": "integer"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "displayAmount": {
+                                    "type": "string"
+                                },
+                                "precision": {
+                                    "type": "integer"
+                                },
+                                "precisionAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "centAmount",
+                                "currency",
+                                "displayAmount",
+                                "absoluteDisplayAmount",
+                                "precisionAmount",
+                                "precision"
+                            ],
+                            "type": "object"
+                        },
+                        "label": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "amount"
+                    ],
+                    "type": "object"
+                },
+                "TPA": {
+                    "properties": {
+                        "amount": {
+                            "properties": {
+                                "absoluteDisplayAmount": {
+                                    "type": "string"
+                                },
+                                "centAmount": {
+                                    "type": "integer"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "displayAmount": {
+                                    "type": "string"
+                                },
+                                "precision": {
+                                    "type": "integer"
+                                },
+                                "precisionAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "centAmount",
+                                "currency",
+                                "displayAmount",
+                                "absoluteDisplayAmount",
+                                "precisionAmount",
+                                "precision"
+                            ],
+                            "type": "object"
+                        },
+                        "label": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "amount"
+                    ],
+                    "type": "object"
+                },
+                "TRA": {
+                    "properties": {
+                        "amount": {
+                            "properties": {
+                                "absoluteDisplayAmount": {
+                                    "type": "string"
+                                },
+                                "centAmount": {
+                                    "type": "integer"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "displayAmount": {
+                                    "type": "string"
+                                },
+                                "precision": {
+                                    "type": "integer"
+                                },
+                                "precisionAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "centAmount",
+                                "currency",
+                                "displayAmount",
+                                "absoluteDisplayAmount",
+                                "precisionAmount",
+                                "precision"
+                            ],
+                            "type": "object"
+                        },
+                        "label": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "amount"
+                    ],
+                    "type": "object"
+                },
+                "TTA": {
+                    "properties": {
+                        "amount": {
+                            "properties": {
+                                "absoluteDisplayAmount": {
+                                    "type": "null"
+                                },
+                                "centAmount": {
+                                    "type": "integer"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "displayAmount": {
+                                    "type": "null"
+                                },
+                                "precision": {
+                                    "type": "integer"
+                                },
+                                "precisionAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "centAmount",
+                                "currency",
+                                "displayAmount",
+                                "absoluteDisplayAmount",
+                                "precisionAmount",
+                                "precision"
+                            ],
+                            "type": "object"
+                        },
+                        "label": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "amount"
+                    ],
+                    "type": "object"
+                }
+            },
+            "required": [
+                "TTA",
+                "FDA",
+                "TRA",
+                "FRA",
+                "TPA",
+                "LIA",
+                "LIT",
+                "TOA",
+                "LDA",
+                "OCA",
+                "ADP",
+                "LDT"
+            ],
+            "type": "object"
+        },
+        "businessUnit": {
+            "type": "string"
+        },
+        "buyerDetails": {
+            "properties": {
+                "billingAddress": {
+                    "properties": {
+                        "city": {
+                            "type": "string"
+                        },
+                        "company": {
+                            "type": "null"
+                        },
+                        "id": {
+                            "type": "string"
+                        },
+                        "mobile": {
+                            "type": "null"
+                        },
+                        "postalCode": {
+                            "type": "string"
+                        },
+                        "region": {
+                            "type": "string"
+                        },
+                        "state": {
+                            "type": "string"
+                        },
+                        "streetLine": {
+                            "type": "string"
+                        },
+                        "streetLine2": {
+                            "type": "null"
+                        },
+                        "streetLineAddress": {
+                            "type": "null"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "streetLine",
+                        "streetLine2",
+                        "streetLineAddress",
+                        "postalCode",
+                        "city",
+                        "region",
+                        "state",
+                        "company",
+                        "mobile"
+                    ],
+                    "type": "object"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "gstin": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "shippingAddress": {
+                    "properties": {
+                        "city": {
+                            "type": "string"
+                        },
+                        "company": {
+                            "type": "null"
+                        },
+                        "id": {
+                            "type": "string"
+                        },
+                        "mobile": {
+                            "type": "null"
+                        },
+                        "postalCode": {
+                            "type": "string"
+                        },
+                        "region": {
+                            "type": "string"
+                        },
+                        "state": {
+                            "type": "string"
+                        },
+                        "streetLine": {
+                            "type": "string"
+                        },
+                        "streetLine2": {
+                            "type": "null"
+                        },
+                        "streetLineAddress": {
+                            "type": "null"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "streetLine",
+                        "streetLine2",
+                        "streetLineAddress",
+                        "postalCode",
+                        "city",
+                        "region",
+                        "state",
+                        "company",
+                        "mobile"
+                    ],
+                    "type": "object"
+                }
+            },
+            "required": [
+                "name",
+                "email",
+                "shippingAddress",
+                "billingAddress",
+                "gstin"
+            ],
+            "type": "object"
+        },
+        "cashBacks": {
+            "properties": {
+                "ALFALOGIC SOLUTIONS INDIA PRIVATE LIMITED": {
+                    "properties": {
+                        "amount": {
+                            "properties": {
+                                "absoluteDisplayAmount": {
+                                    "type": "null"
+                                },
+                                "centAmount": {
+                                    "type": "integer"
+                                },
+                                "currency": {
+                                    "type": "null"
+                                },
+                                "displayAmount": {
+                                    "type": "null"
+                                },
+                                "precision": {
+                                    "type": "integer"
+                                },
+                                "precisionAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "centAmount",
+                                "currency",
+                                "displayAmount",
+                                "absoluteDisplayAmount",
+                                "precisionAmount",
+                                "precision"
+                            ],
+                            "type": "object"
+                        },
+                        "cashbackType": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "amount",
+                        "cashbackType"
+                    ],
+                    "type": "object"
+                },
+                "Test Steel Agencies - Seller": {
+                    "properties": {
+                        "amount": {
+                            "properties": {
+                                "absoluteDisplayAmount": {
+                                    "type": "null"
+                                },
+                                "centAmount": {
+                                    "type": "integer"
+                                },
+                                "currency": {
+                                    "type": "null"
+                                },
+                                "displayAmount": {
+                                    "type": "null"
+                                },
+                                "precision": {
+                                    "type": "integer"
+                                },
+                                "precisionAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "centAmount",
+                                "currency",
+                                "displayAmount",
+                                "absoluteDisplayAmount",
+                                "precisionAmount",
+                                "precision"
+                            ],
+                            "type": "object"
+                        },
+                        "cashbackType": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "integer"
+                        },
+                        "name": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name",
+                        "amount",
+                        "cashbackType"
+                    ],
+                    "type": "object"
+                }
+            },
+            "required": [
+                "ALFALOGIC SOLUTIONS INDIA PRIVATE LIMITED",
+                "Test Steel Agencies - Seller"
+            ],
+            "type": "object"
+        },
+        "category": {
+            "type": "string"
+        },
+        "channels": {
+            "items": [
+                {
+                    "type": "string"
+                }
+            ],
+            "type": "array"
+        },
+        "childOrders": {
+            "items": [
+                {
+                    "properties": {
+                        "currentState": {
+                            "type": "string"
+                        },
+                        "nextSellerOrderStates": {
+                            "items": [
+                                {
+                                    "properties": {
+                                        "state": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "state"
+                                    ],
+                                    "type": "object"
+                                },
+                                {
+                                    "properties": {
+                                        "state": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "state"
+                                    ],
+                                    "type": "object"
+                                },
+                                {
+                                    "properties": {
+                                        "state": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "state"
+                                    ],
+                                    "type": "object"
+                                },
+                                {
+                                    "properties": {
+                                        "state": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "state"
+                                    ],
+                                    "type": "object"
+                                },
+                                {
+                                    "properties": {
+                                        "state": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "state"
+                                    ],
+                                    "type": "object"
+                                }
+                            ],
+                            "type": "array"
+                        },
+                        "sellerName": {
+                            "type": "string"
+                        },
+                        "sellerOrderNumber": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "sellerOrderNumber",
+                        "sellerName",
+                        "currentState",
+                        "nextSellerOrderStates"
+                    ],
+                    "type": "object"
+                }
+            ],
+            "type": "array"
+        },
+        "committedDeliveryDate": {
+            "type": "string"
+        },
+        "ctId": {
+            "type": "string"
+        },
+        "deliveryType": {
+            "type": "string"
+        },
+        "id": {
+            "type": "integer"
+        },
+        "isMultiSeller": {
+            "type": "boolean"
+        },
+        "isZeroAdvanceOrder": {
+            "type": "boolean"
+        },
+        "mode": {
+            "type": "string"
+        },
+        "nextOrderStates": {
+            "items": [
+                {
+                    "properties": {
+                        "state": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "state"
+                    ],
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "state": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "state"
+                    ],
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "state": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "state"
+                    ],
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "state": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "state"
+                    ],
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "state": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "state"
+                    ],
+                    "type": "object"
+                }
+            ],
+            "type": "array"
+        },
+        "orderAmount": {
+            "properties": {
+                "absoluteDisplayAmount": {
+                    "type": "string"
+                },
+                "centAmount": {
+                    "type": "integer"
+                },
+                "currency": {
+                    "type": "string"
+                },
+                "displayAmount": {
+                    "type": "string"
+                },
+                "precision": {
+                    "type": "integer"
+                },
+                "precisionAmount": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+            ],
+            "type": "object"
+        },
+        "orderDate": {
+            "type": "string"
+        },
+        "orderNumber": {
+            "type": "string"
+        },
+        "orderPaymentType": {
+            "type": "string"
+        },
+        "orderRefundCount": {
+            "type": "integer"
+        },
+        "orderStatus": {
+            "type": "string"
+        },
+        "orderTermDetails": {
+            "properties": {
+                "committedDeliveryTimeline": {
+                    "type": "null"
+                },
+                "estimatedDeliveryTimeline": {
+                    "type": "null"
+                },
+                "PO_details": {
+                    "properties": {
+                        "active": {
+                            "type": "null"
+                        },
+                        "file_name": {
+                            "type": "null"
+                        },
+                        "url": {
+                            "type": "null"
+                        }
+                    },
+                    "required": [
+                        "url",
+                        "active",
+                        "file_name"
+                    ],
+                    "type": "object"
+                },
+                "sellerPaymentTerms": {
+                    "type": "null"
+                },
+                "specialDeliveryInstructions": {
+                    "type": "null"
+                },
+                "tdc_requirements": {
+                    "type": "null"
+                }
+            },
+            "required": [
+                "committedDeliveryTimeline",
+                "sellerPaymentTerms",
+                "specialDeliveryInstructions",
+                "estimatedDeliveryTimeline",
+                "PO_details",
+                "tdc_requirements"
+            ],
+            "type": "object"
+        },
+        "orderType": {
+            "type": "string"
+        },
+        "paymentCompletionDate": {
+            "type": "string"
+        },
+        "paymentStatus": {
+            "type": "string"
+        },
+        "paymentType": {
+            "type": "string"
+        },
+        "sellerDetails": {
+            "properties": {
+                "Test Steel Agencies - Seller": {
+                    "properties": {
+                        "companyName": {
+                            "type": "string"
+                        },
+                        "email": {
+                            "type": "string"
+                        },
+                        "gstin": {
+                            "type": "string"
+                        },
+                        "mobile": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "name",
+                        "mobile",
+                        "email",
+                        "companyName",
+                        "gstin"
+                    ],
+                    "type": "object"
+                }
+            },
+            "required": [
+                "Test Steel Agencies - Seller"
+            ],
+            "type": "object"
+        }
+    },
+    "required": [
+        "orderNumber",
+        "id",
+        "ctId",
+        "buyerDetails",
+        "orderAmount",
+        "orderStatus",
+        "nextOrderStates",
+        "paymentType",
+        "paymentStatus",
+        "mode",
+        "deliveryType",
+        "amounts",
+        "orderType",
+        "channels",
+        "childOrders",
+        "businessUnit",
+        "committedDeliveryDate",
+        "orderDate",
+        "paymentCompletionDate",
+        "cashBacks",
+        "sellerDetails",
+        "category",
+        "isMultiSeller",
+        "orderTermDetails",
+        "orderRefundCount",
+        "orderPaymentType",
+        "isZeroAdvanceOrder"
+    ],
+    "type": "object"
+}

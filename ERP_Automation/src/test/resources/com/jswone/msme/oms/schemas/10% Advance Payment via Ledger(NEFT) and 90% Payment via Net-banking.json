@@ -1,0 +1,1204 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "orderNumber": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "ctId": {
+      "type": "string"
+    },
+    "buyerDetails": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "shippingAddress": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "streetLine": {
+              "type": "string"
+            },
+            "streetLine2": {
+              "type": "null"
+            },
+            "streetLineAddress": {
+              "type": "null"
+            },
+            "postalCode": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "region": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "company": {
+              "type": "null"
+            },
+            "mobile": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "id",
+            "streetLine",
+            "streetLine2",
+            "streetLineAddress",
+            "postalCode",
+            "city",
+            "region",
+            "state",
+            "company",
+            "mobile"
+          ]
+        },
+        "billingAddress": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "streetLine": {
+              "type": "string"
+            },
+            "streetLine2": {
+              "type": "null"
+            },
+            "streetLineAddress": {
+              "type": "null"
+            },
+            "postalCode": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "region": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "company": {
+              "type": "null"
+            },
+            "mobile": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "id",
+            "streetLine",
+            "streetLine2",
+            "streetLineAddress",
+            "postalCode",
+            "city",
+            "region",
+            "state",
+            "company",
+            "mobile"
+          ]
+        },
+        "gstin": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "email",
+        "shippingAddress",
+        "billingAddress",
+        "gstin"
+      ]
+    },
+    "orderAmount": {
+      "type": "object",
+      "properties": {
+        "centAmount": {
+          "type": "integer"
+        },
+        "currency": {
+          "type": "string"
+        },
+        "displayAmount": {
+          "type": "string"
+        },
+        "absoluteDisplayAmount": {
+          "type": "string"
+        },
+        "precisionAmount": {
+          "type": "integer"
+        },
+        "precision": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "centAmount",
+        "currency",
+        "displayAmount",
+        "absoluteDisplayAmount",
+        "precisionAmount",
+        "precision"
+      ]
+    },
+    "orderStatus": {
+      "type": "string"
+    },
+    "nextOrderStates": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "state": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "state"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "state": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "state"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "state": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "state"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "state": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "state"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "state": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "state"
+          ]
+        }
+      ]
+    },
+    "paymentType": {
+      "type": "string"
+    },
+    "paymentStatus": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "deliveryType": {
+      "type": "string"
+    },
+    "amounts": {
+      "type": "object",
+      "properties": {
+        "TTA": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "displayAmount": {
+                  "type": "null"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "null"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "amount"
+          ]
+        },
+        "OCT": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "displayAmount": {
+                  "type": "null"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "null"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "amount"
+          ]
+        },
+        "FDA": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "displayAmount": {
+                  "type": "null"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "null"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "amount"
+          ]
+        },
+        "TRA": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "displayAmount": {
+                  "type": "string"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "string"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "amount"
+          ]
+        },
+        "TPA": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "displayAmount": {
+                  "type": "string"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "string"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "amount"
+          ]
+        },
+        "LIA": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "displayAmount": {
+                  "type": "string"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "string"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "amount"
+          ]
+        },
+        "TOA": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "displayAmount": {
+                  "type": "string"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "string"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "amount"
+          ]
+        },
+        "LDA": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "displayAmount": {
+                  "type": "string"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "string"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "amount"
+          ]
+        },
+        "FRT": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "displayAmount": {
+                  "type": "null"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "null"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "amount"
+          ]
+        },
+        "OCA": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "displayAmount": {
+                  "type": "null"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "null"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "amount"
+          ]
+        },
+        "ADP": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "displayAmount": {
+                  "type": "null"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "null"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "amount"
+          ]
+        },
+        "FRA": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "displayAmount": {
+                  "type": "null"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "null"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "amount"
+          ]
+        },
+        "LIT": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "displayAmount": {
+                  "type": "string"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "string"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "amount"
+          ]
+        },
+        "LDT": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "displayAmount": {
+                  "type": "string"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "string"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "amount"
+          ]
+        }
+      },
+      "required": [
+        "TTA",
+        "OCT",
+        "FDA",
+        "TRA",
+        "TPA",
+        "LIA",
+        "TOA",
+        "LDA",
+        "FRT",
+        "OCA",
+        "ADP",
+        "FRA",
+        "LIT",
+        "LDT"
+      ]
+    },
+    "orderType": {
+      "type": "string"
+    },
+    "channels": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "childOrders": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "sellerOrderNumber": {
+              "type": "string"
+            },
+            "sellerName": {
+              "type": "string"
+            },
+            "currentState": {
+              "type": "string"
+            },
+            "nextSellerOrderStates": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "state": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "state"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "state": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "state"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "state": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "state"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "state": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "state"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "state": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "state"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "sellerOrderNumber",
+            "sellerName",
+            "currentState",
+            "nextSellerOrderStates"
+          ]
+        }
+      ]
+    },
+    "businessUnit": {
+      "type": "string"
+    },
+    "committedDeliveryDate": {
+      "type": "string"
+    },
+    "orderDate": {
+      "type": "string"
+    },
+    "paymentCompletionDate": {
+      "type": "string"
+    },
+    "cashBacks": {
+      "type": "object",
+      "properties": {
+        "ALFALOGIC SOLUTIONS INDIA PRIVATE LIMITED": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "null"
+                },
+                "displayAmount": {
+                  "type": "null"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "null"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            },
+            "cashbackType": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "amount",
+            "cashbackType"
+          ]
+        },
+        "Test Steel Agencies - Seller": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "centAmount": {
+                  "type": "integer"
+                },
+                "currency": {
+                  "type": "null"
+                },
+                "displayAmount": {
+                  "type": "null"
+                },
+                "absoluteDisplayAmount": {
+                  "type": "null"
+                },
+                "precisionAmount": {
+                  "type": "integer"
+                },
+                "precision": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "centAmount",
+                "currency",
+                "displayAmount",
+                "absoluteDisplayAmount",
+                "precisionAmount",
+                "precision"
+              ]
+            },
+            "cashbackType": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "amount",
+            "cashbackType"
+          ]
+        }
+      },
+      "required": [
+        "ALFALOGIC SOLUTIONS INDIA PRIVATE LIMITED",
+        "Test Steel Agencies - Seller"
+      ]
+    },
+    "sellerDetails": {
+      "type": "object",
+      "properties": {
+        "Test Steel Agencies - Seller": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "mobile": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "companyName": {
+              "type": "string"
+            },
+            "gstin": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "mobile",
+            "email",
+            "companyName",
+            "gstin"
+          ]
+        }
+      },
+      "required": [
+        "Test Steel Agencies - Seller"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "isMultiSeller": {
+      "type": "boolean"
+    },
+    "orderTermDetails": {
+      "type": "object",
+      "properties": {
+        "committedDeliveryTimeline": {
+          "type": "null"
+        },
+        "sellerPaymentTerms": {
+          "type": "null"
+        },
+        "specialDeliveryInstructions": {
+          "type": "null"
+        },
+        "estimatedDeliveryTimeline": {
+          "type": "null"
+        },
+        "PO_details": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "null"
+            },
+            "active": {
+              "type": "null"
+            },
+            "file_name": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "url",
+            "active",
+            "file_name"
+          ]
+        },
+        "tdc_requirements": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "committedDeliveryTimeline",
+        "sellerPaymentTerms",
+        "specialDeliveryInstructions",
+        "estimatedDeliveryTimeline",
+        "PO_details",
+        "tdc_requirements"
+      ]
+    },
+    "orderRefundCount": {
+      "type": "integer"
+    },
+    "orderPaymentType": {
+      "type": "string"
+    },
+    "isZeroAdvanceOrder": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "orderNumber",
+    "id",
+    "ctId",
+    "buyerDetails",
+    "orderAmount",
+    "orderStatus",
+    "nextOrderStates",
+    "paymentType",
+    "paymentStatus",
+    "mode",
+    "deliveryType",
+    "amounts",
+    "orderType",
+    "channels",
+    "childOrders",
+    "businessUnit",
+    "committedDeliveryDate",
+    "orderDate",
+    "paymentCompletionDate",
+    "cashBacks",
+    "sellerDetails",
+    "category",
+    "isMultiSeller",
+    "orderTermDetails",
+    "orderRefundCount",
+    "orderPaymentType",
+    "isZeroAdvanceOrder"
+  ]
+}
