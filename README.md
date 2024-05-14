@@ -22,17 +22,17 @@ This project is for automating UI, API for SSR and Prod
 - Database testing support. </br>
 
 ## Screenshots
-![Report](https://user-images.githubusercontent.com/92700205/216805111-90ffd88e-364d-4679-8dd9-c5014ad6cbc7.png)
+![Report]()
 
 ## Authors
 
-- [@LaxminarayanJena](https://github.com/laxminarayanJena)
+- [@LaxminarayanJena](https://github.trellix.com/laxminarayan-jena)
 
 
 ## Feedback
 
 If you have any feedback, please reach out to us at 
-Repo owner or admin (v_laxminarayan.jena@jsw.in)
+Repo owner or admin (laxminarayan.jena@trellix.com)
 Other community or team contact
 
 
